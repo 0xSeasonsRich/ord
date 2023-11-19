@@ -569,8 +569,15 @@ impl<'index> Updater<'_> {
         block.header.time,
         &mut transaction_id_to_rune,
       )?;
-      for (i, (tx, txid)) in block.txdata.iter().enumerate() {
-        rune_updater.index_runes(i, tx, *txid)?;
+      let mut block_start_sync_rune: u64;
+
+      if self.index.options.chain().to_string() == "Testnet" { block_start_sync_rune = 10 };
+      if self.index.options.chain().to_string() == "Bitcoin" { block_start_sync_rune = 0 } else { block_start_sync_rune = 10 };
+
+      if self.height >= block_start_sync_rune {
+        for (i, (tx, txid)) in block.txdata.iter().enumerate() {
+          rune_updater.index_runes(i, tx, *txid)?;
+        }
       }
     }
 
