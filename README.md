@@ -71,3 +71,5 @@ Everything almost done, now see the magic, your local ready to sync all Rune tra
 ```
 ord --bitcoin-rpc-user ORD_BITCOIN_RPC_USER --bitcoin-rpc-pass ORD_BITCOIN_RPC_PASS --bitcoin-data-dir /root/.bitcoin-testnet/testnet3 --chain testnet  --index-runes-pre-alpha-i-agree-to-get-rekt --data-dir /root/.local/share/ord-rune-testnet server --enable-json-api --http-port 5656
 ```
+
+Adding type `--index-runes-pre-alpha-i-agree-to-get-rekt` so that `ord` knows to sync all transactions related to runes 
