@@ -571,7 +571,7 @@ impl<'index> Updater<'_> {
       )?;
       let mut block_start_sync_rune: u64;
 
-      if self.index.options.chain().to_string() == "Testnet" { block_start_sync_rune = 10 };
+      if self.index.options.chain().to_string() == "Testnet" { block_start_sync_rune = 2539948 };
       if self.index.options.chain().to_string() == "Bitcoin" { block_start_sync_rune = 0 } else { block_start_sync_rune = 10 };
 
       if self.height >= block_start_sync_rune {
