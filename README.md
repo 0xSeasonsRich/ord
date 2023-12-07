@@ -18,7 +18,7 @@ Join our [Discord server](https://discord.gg/jncetgZScu) to stay updated and eng
 
 ## CHANGED
 
-We've customized the Signature of Rune-related transactions to use `RUNE_ALPHA` instead of `RUNE_TEST`. Transactions start syncing from [block 10](https://mempool.space/testnet/block/00000000700e92a916b46b8b91a14d1303d5d91ef0b09eecc3151fb958fd9a2e) for Testnet and [genesis block (block 0)](https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f) for mainnet.
+We've customized the Signature of Rune-related transactions to use `R` instead of `RUNE_TEST`. Transactions start syncing from [block 10](https://mempool.space/testnet/block/00000000700e92a916b46b8b91a14d1303d5d91ef0b09eecc3151fb958fd9a2e) for Testnet and [genesis block (block 0)](https://mempool.space/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f) for mainnet.
 
 You can try it out here:
 
